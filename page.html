@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="normalize" href="normalize.css">                 <!-- подключили нормализацию отступов -->
+    <link rel="stylesheet" href="style.css">                    <!-- подключили scc -->
+</head>
+<body>
+    <header class="header">                             <!-- семантический тег для верхнего меню -->
+        <!-- ссылка на лого -->
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><a href="#" class="header_logo"></a></span>
+<nav class="header_nav">                        <!-- семантический тег навигации -->
+<ul class="header_list">                    <!-- список для эл-ов верхнего меню -->
+    <li class="header_item"><a class="header_link" href="page.html">Главная</a></li>
+    <li class="header_item"><a class="header_link" href="index.html">Личный кабинет</a></li>   
+</ul>
+</nav>
+</header>
+
+
+<div class="page">
+
+    <p class="stb">Завершенные соревнования</p>
+    <div class="maim_image">
+        <a class="main_imgcontact" href="#"><img class="main_img1" src="материалы/б1.png"></a>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="page.html">Фотографии</a>
+    <a href="page.html">Видео</a>
+    <a href="page.html">Музыка</a>
+    <a href="page.html">Игры</a>
+    <a href="page.html">Книги</a>
+    <a href="page.html">Рисунки</a>
+  </div>
+  
+
+
+
+  <script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+<div class="copy-right">
+    <p style="text-align: center;">@apex</a></p>
+</div>
+</body>
+</html>
